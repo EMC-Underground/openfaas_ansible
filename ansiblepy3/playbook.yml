@@ -1,0 +1,8 @@
+---
+- hosts: all
+  vars:
+    passed: "{{ var1 }}"
+    passed2: "{{ var2 }}"
+    ansible_python_interpreter: "python"
+  roles:
+    - all

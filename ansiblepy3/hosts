@@ -1,0 +1,6 @@
+[all:vars]
+ansible_ssh_pass=Password#1
+ansible_ssh_common_args="-o StrictHostKeyCheckings=no"
+
+[all]
+10.237.198.140
