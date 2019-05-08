@@ -24,7 +24,7 @@ def handle(req):
 
     inventory = InventoryManager(loader=loader, sources=[inventory_path])
     variable_manager = VariableManager(loader=loader, inventory=inventory,)
-    variable_manager.extra_vars = {'var1': f'{passed_var["name"]}', 'var2': 'aaron'}
+    variable_manager.extra_vars = {'var1': f'{passed_var["name"]}', 'var2': f'{passed_var["name2"]}'}
     executor = PlaybookExecutor(
                 playbooks=[playbook_path], inventory=inventory, variable_manager=variable_manager, loader=loader,
                 options=options, passwords=passwords)
